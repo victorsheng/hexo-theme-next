@@ -87,11 +87,11 @@ menu:
   home: / || home
   about: /about/ || user
   tags: /tags/ || tags
-  #categories: /categories/ || th
+  categories: /categories/ || th
   archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  commonweal: /404/ || heartbeat
+  schedule: /schedule/ || calendar
+  sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -803,3 +803,9 @@ images: images
 
 # Theme version
 version: 5.1.3
+
+# sitemap
+sitemap: 
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
