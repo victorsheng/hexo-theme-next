@@ -352,8 +352,8 @@ baidu_analytics: 2342180055c7117a644c0e88269f1028
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: victor123-cn
   count: true
 
 # Hypercomments
