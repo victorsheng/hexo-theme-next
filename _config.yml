@@ -10,7 +10,7 @@ override: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
-  enable: true
+  enable: false
 
 # Redefine custom file paths. Introduced in NexT v6.0.2.
 # If commented, will be used default custom file paths.
@@ -122,6 +122,8 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
+  书单: /book/ || book
+  常用网站: /web/ || calendar
   #schedule: /schedule/ || calendar
   sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -179,7 +181,7 @@ social_icons:
 # Usage: `permalink || title`
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the title and aria-label name.
-#github_banner: https://github.com/yourname || Follow me on GitHub
+github_banner: https://github.com/victorsheng || Follow me on GitHub
 
 # Blog rolls
 links_icon: link
@@ -234,8 +236,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
@@ -243,13 +245,13 @@ sidebar:
   offset: 12
 
   # Back to top in sidebar (only for Pisces | Gemini).
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -260,7 +262,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -268,14 +270,14 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
-  updated_at:
+  updated_at: true
     enabled: true
     # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
     # And if post will edited in same day as created, edited time will show in popup title under created time label.
@@ -288,7 +290,7 @@ post_meta:
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: false
+  item_text_total: true
   awl: 4
   wpm: 275
 
@@ -329,7 +331,7 @@ related_posts:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
 
 # Post edit
@@ -364,6 +366,7 @@ custom_logo:
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
 
+# Enable "cheers" for archive
 # Enable "cheers" for archive page.
 cheers_enabled: true
 
@@ -836,7 +839,7 @@ pace_theme: pace-theme-minimal
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
